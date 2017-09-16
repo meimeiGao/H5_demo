@@ -1,0 +1,185 @@
+* { font-family: Arial; font-size: 14px; margin: 0; padding: 0; border: none; }
+a { text-decoration: none; }
+ul { list-style: none; }
+
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+body{
+    min-width: 67%;
+    max-width: 120%;
+}
+/*header部份*/
+header{
+    background: #000;
+}
+header .container{
+    width:1200px;
+    height: 73px;
+    margin: 0 auto;
+}
+header>.container>a{
+    display: block;
+    float: left;
+    margin: 5px 30px;
+}
+header nav,header ul{
+    float: right;
+}
+header ul li{
+    float: left;
+}
+
+header ul li a{
+    display: block;
+    width:110px;
+    height: 73px;
+    text-align: center;
+    font:bold 24px/73px 'Arial';
+    color: white;
+}
+header ul li:nth-child(1){
+    background: #433b90;
+    height: 80px;
+}
+header ul li:nth-child(2){
+    background: #017fcb;
+}
+header ul li:nth-child(3){
+    background: #78b917;
+}
+header ul li:nth-child(4){
+    background: #feb800;
+}
+header ul li:nth-child(5){
+    background: #f27c01;
+}
+header ul li:nth-child(6){
+    background: #d40112;
+}
+header:after,#banner:after,#main:after{
+    content:'';
+    display: block;
+    height: 7px;
+    background: #CECECE;
+}
+header ul li a:hover{
+    height:80px;
+}
+/*banner部份*/
+#banner{
+    background-color: #EAEAEA;
+}
+#banner .container{
+    position: relative;
+    width:1200px;
+    height:538px;
+    margin: 0 auto;
+}
+
+#banner .container .left{
+    position: absolute;
+    left: 0;
+    top:119px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .35);
+
+}
+#banner .container .left img{
+    height: 300px;
+}
+#banner .container .middle{
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top:69px;
+    box-shadow: 0 30px 220px 22px rgba(0, 0, 0, .35);
+    border: 1px solid white;
+}
+#banner .container .middle img{
+    height:400px;
+    width:800px;
+}
+#banner .container .right{
+    position: absolute;
+    right: 0;
+    top:119px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .35);
+}
+#banner .container .right img{
+    height:300px;
+}
+/*main*/
+
+#main .container{
+    width:1200px;
+    margin: 20px auto 0;
+}
+#main h2{
+    margin-bottom: 20px;
+    font: bold 30px 'Arial';
+    background-color: #fff;
+}
+#main h2 span{
+    font: bold 30px 'Arial';
+    color: #797979;
+}
+#main .container aside{
+    float: left;
+    height:473px;
+    width:450px;
+}
+#main .container aside dl{
+    position: relative;
+    height: 74px;
+    margin-bottom: 20px;
+}
+#main .container aside dl dt{
+    position: absolute;
+    left: 90px;
+    top:-1px;
+    font: bold 16px 'Arial';
+    color: #000;
+    text-decoration: underline;
+}
+#main .container aside dl dd:nth-of-type(2){
+    position: absolute;
+    left: 90px;
+    top: 20px;
+
+}
+#main .container article{
+    overflow: hidden;
+    float: right;
+    height:473px;
+    width:720px;
+}
+#main article p{
+    margin-bottom: 20px;
+}
+/*footer部份*/
+footer{
+    background: #000;
+}
+footer .container{
+    width:1200px;
+    margin: 0 auto;
+    height:64px;
+}
+footer .container p{
+    float: left;
+    color: white;
+    font: 14px/64px 'Arial';
+}
+footer .container div{
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+footer .container div img:not(:last-child){
+    margin-right: 5px;
+}
